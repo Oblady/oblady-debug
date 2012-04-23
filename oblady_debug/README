@@ -1,0 +1,57 @@
+--------
+Oblady Debug v1 - Extension for TYPO3 CMS.
+--------
+
+Oblady Debug is a fork of the well known extension “cc_debug”.
+It has a beautified and re-factored source code,  it is more configurable and it includes extra behaviors.
+PHP5 only!
+
+Features :
+--------
+    o TYPO3 4.5 compatible (it doesn't complain in logs).
+    o "javascript:console.log()" capable.
+    O "FirePHP" capable.
+    o large options panel.
+    o per user configuration.
+--------
+
+Disclaimer :
+--------
+Oblady_debug is a fork of cc_debug.
+cc_debug was made by :
+
+Author : René Fritz <r.fritz@colorcube.de>
+Compagny : Colorcube - digital media lab
+
+Original Copyright notice :
+
+/***************************************************************
+*  Copyright notice
+*
+*  (c) 2003 René Fritz (r.fritz@colorcube.de)
+*  All rights reserved
+*
+*  This script is part of the Typo3 project. The Typo3 project is
+*  free software; you can redistribute it and/or modify
+*  it under the terms of the GNU General Public License as published by
+*  the Free Software Foundation; either version 2 of the License, or
+*  (at your option) any later version.
+*
+*  The GNU General Public License can be found at
+*  http://www.gnu.org/copyleft/gpl.html.
+*
+*  This script is distributed in the hope that it will be useful,
+*  but WITHOUT ANY WARRANTY; without even the implied warranty of
+*  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+*  GNU General Public License for more details.
+*
+*  This copyright notice MUST APPEAR in all copies of the script!
+***************************************************************/
+--------
+
+Contacts :
+--------
+Comments? Bugs? Requests?
+    o Author : Adrien LUCAS <adrien@oblady.fr>
+    o Company : Oblady <contact@oblady.fr>
+--------

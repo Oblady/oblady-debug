@@ -1,0 +1,68 @@
+  # cat=basic; type=boolean; label= BE users can override config
+userconf_allowed = 1
+  # cat=basic; type=string; label= Date format to use in reports : with date() syntax
+reportsdateformat = [Y-m-d H:i:s]
+  # cat=basic; type=boolean; label= Catch PHP errors : use "set_error_handler()"
+set_error_handler = 1
+  # cat=basic; type=boolean; label= Catch PHP errors : use "set_error_handler()"
+set_exception_handler = 0
+  # cat=basic; type=string; label= Exclude objects from errors contexts : specify errors levels to avoid context's objects
+exclude_objects = E_NOTICE
+  # cat=basic; type=string; label= Classes to exclude on some error levels
+excludedClasses = tx_obladydebug*:E_ALL
+
+  # cat=basic; type=string; label= Define E_OBLADYDEBUG_LVL1 value : this is a custom error level
+customlevel_1 = E_ALL_NOT_NOTICE | E_DEBUG;
+  # cat=basic; type=string; label= Define E_OBLADYDEBUG_LVL2 value : this is a custom error level
+customlevel_2 = E_ALL_NOT_NOTICE | E_DEBUG;
+  # cat=basic; type=string; label= Define E_OBLADYDEBUG_LVL3 value : this is a custom error level
+customlevel_3 = E_ALL_NOT_NOTICE | E_DEBUG;
+
+  # cat=reporting; type=boolean; label= Enable "stdout" reporting : just echo it
+reporting_stdout = 0
+  # cat=reporting; type=boolean; label= Enable "popup" reporting : this is classic debug from cc_debug
+reporting_popup = 1
+  # cat=reporting; type=boolean; label= Enable "firebug" reporting : you need Firefox with Firebug enabled
+reporting_firebug = 0
+  # cat=reporting; type=boolean; label= Enable "firephp" reporting : you need Firefox with Firebug + FirePHP enabled
+reporting_firephp = 0
+  # cat=reporting; type=boolean; label=Enable "systemelog" reporting : OS based logging
+reporting_systemelog = 0
+  # cat=reporting; type=boolean; label= Enable "filelog" reporting : ouput to the local filesysteme
+reporting_filelog = 0
+  # cat=reporting; type=boolean; label= Enable "maillog" reporting : send an email
+reporting_maillog = 0
+  # cat=reporting; type=boolean; label=Enable "serverlog" reporting : SAPI based logging
+reporting_serverlog = 0
+  # cat=reporting; type=boolean; label= Enable "browser" reporting : output at the bottom of the page
+reporting_browser = 0
+  # cat=reporting; type=boolean; label=Enable "redirect" reporting : not really a way to report, just redirect
+reporting_redirect = 0
+
+  # cat=error_levels; type=string; label= Error levels for "stdout" : "stdout" reporting must be enabled
+errlevel_stdout = E_ALL
+  # cat=error_levels; type=string; label= Error levels for "popup" reporting : "popup" reporting must be enabled
+errlevel_popup = E_ALL_NOT_NOTICE | E_DEBUG
+  # cat=error_levels; type=string; label= Error levels for "firebug" reporting : "firebug" reporting must be enabled
+errlevel_firebug = E_ALL_NOT_NOTICE | E_DEBUG
+  # cat=error_levels; type=string; label= Error levels for "firephp" reporting : "firebug" reporting must be enabled
+errlevel_firephp = E_ALL_NOT_NOTICE | E_DEBUG
+  # cat=error_levels; type=string; label= Error levels for "systemelog" reporting : "systemelog" reporting must be enabled
+errlevel_systemelog = E_ALL_NOT_NOTICE
+  # cat=error_levels; type=string; label= Error levels for "filelog" reporting : "filelog" reporting must be enabled
+errlevel_filelog = E_VERY_ALL
+  # cat=error_levels; type=string; label= Error levels for "maillog" reporting : "maillog" reporting must be enabled
+errlevel_maillog = E_ERROR_ALL
+  # cat=error_levels; type=string; label=Error levels for "serverlog" reporting : "serverlog" reporting must be enabled
+errlevel_serverlog = E_WARNING_ALL
+  # cat=error_levels; type=string; label=Error levels for "browser" reporting : "browser" reporting must be enabled
+errlevel_browser = E_NOTICE_ALL
+  # cat=error_levels; type=string; label=Error levels for "redirect" reporting : "redirect" reporting must be enabled
+errlevel_redirect = 1 & 2 & 4 & 8
+
+  # cat=destinations; type=string; label= Filelog destination : a writtable file on the local filesysteme
+destinations_file = /tmp/obladydebug.out
+  # cat=destinations; type=string; label= Maillog destination : a valid email address
+destinations_mail = support@exemple.com
+  # cat=destinations; type=string; label= Redirection : a valid url
+destinations_redirect = http://www.exemple.com/we/are/sorry.html
